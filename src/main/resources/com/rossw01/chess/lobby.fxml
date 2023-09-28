@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rossw01.chess.Lobby.LobbyController">
+   <HBox alignment="TOP_RIGHT" prefHeight="17.0" prefWidth="600.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Java Chess Server" wrappingWidth="368.13671875" HBox.hgrow="ALWAYS">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="10.0" top="5.0" />
+         </HBox.margin>
+      </Text>
+      <TextField fx:id="nameField" onAction="#setName" prefHeight="29.0" prefWidth="171.0" promptText="Set name..." />
+      <Button fx:id="submitNameButton" mnemonicParsing="false" onAction="#setName" prefHeight="29.0" prefWidth="79.0" text="Submit" />
+   </HBox>
+   <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#getGames" prefHeight="25.0" prefWidth="1.0" text="Refresh List" />
+   <ListView fx:id="gameList" prefHeight="351.0" prefWidth="600.0" />
+   <HBox prefHeight="4.0" prefWidth="600.0">
+      <Button fx:id="joinGameButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onJoinGameButtonClick" prefHeight="25.0" text="Join Game" HBox.hgrow="ALWAYS" />
+      <Button fx:id="createGameButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCreateGameButtonClick" prefHeight="25.0" text="Create Game" HBox.hgrow="ALWAYS" />
+   </HBox>
+</VBox>

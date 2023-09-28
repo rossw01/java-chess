@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox minWidth="255" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.rossw01.chess.Chat.ChatController">
+    <TabPane>
+        <Tab closable="false" text="Chat">
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                  prefHeight="400.0" prefWidth="255.0">
+                <ListView fx:id="messageHistory" prefHeight="375.0" prefWidth="238.0" VBox.vgrow="ALWAYS"/>
+                <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" prefHeight="100.0"
+                      prefWidth="200.0" style="-fx-max-height: 0;">
+                    <TextField fx:id="messageField" onAction="#onSendMessage" prefHeight="0.0"
+                               prefWidth="212.0" HBox.hgrow="ALWAYS"/>
+                    <Button mnemonicParsing="false" onAction="#onSendMessage" prefHeight="25.0"
+                            prefWidth="111.0" text="Send"/>
+                </HBox>
+            </VBox>
+        </Tab>
+        <Tab closable="false" text="Sounds">
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                  minWidth="-Infinity" prefHeight="400.0" prefWidth="255.0">
+                <opaqueInsets>
+                    <Insets/>
+                </opaqueInsets>
+                <padding>
+                    <Insets top="20.0"/>
+                </padding>
+                <ToggleButton mnemonicParsing="false" onAction="#onMuteButtonClick" prefHeight="25.0"
+                              prefWidth="217.0" text="Mute SFX"/>
+                <Button fx:id="sound1" onAction="#onButton1Click" prefHeight="25.0" prefWidth="217.0"
+                        text="What the"/>
+            </VBox>
+        </Tab>
+    </TabPane>
+</VBox>
