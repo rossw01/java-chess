@@ -16,5 +16,5 @@ Still needs a lot of refactoring, and lots of networking functionality still nee
       <img src="https://github.com/rossw01/java-chess/assets/56947241/12723399-882f-425b-8ade-098ddb9c4ab5" />
   </p>
   <p align="center">
-    Example of connecting to a server without having a name set.
+    Example of connecting to a game without having a name set.
   </p>
